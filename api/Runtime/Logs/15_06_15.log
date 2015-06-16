@@ -1,0 +1,97 @@
+[ 2015-06-15T11:31:24+08:00 ] ::1 /game/api/game/User/verify
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002061s ]
+
+[ 2015-06-15T11:31:42+08:00 ] ::1 /game/api/game/User/login
+SQL: SHOW COLUMNS FROM `hg_ucenter_member` [ RunTime:0.085716s ]
+SQL: SELECT * FROM `hg_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001668s ]
+SQL: UPDATE `hg_ucenter_member` SET `last_login_time`=1434339101,`last_login_ip`=0 WHERE ( `id` = 1 ) [ RunTime:0.001090s ]
+SQL: SHOW COLUMNS FROM `hg_member` [ RunTime:0.020074s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `hg_member` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001301s ]
+SQL: UPDATE `hg_member` SET `login`=`login`+1,`last_login_time`=1434339101,`last_login_ip`=0 WHERE ( `uid` = 1 ) [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `hg_action` [ RunTime:0.005723s ]
+SQL: SELECT * FROM `hg_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.001893s ]
+SQL: SHOW COLUMNS FROM `hg_action_log` [ RunTime:0.005413s ]
+SQL: INSERT INTO `hg_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (1,1,0,'member',1,1434339101,'admin在2015-06-15 11:31登录了后台') [ RunTime:0.017482s ]
+SQL: SELECT * FROM `hg_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.002031s ]
+NOTIC: [8] Undefined offset: 1 K:\www\game\api\Application\Common\Common\function.php 第 665 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given K:\www\game\api\Application\Common\Common\function.php 第 665 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hg_action_log` WHERE ( `action_id` = 1 ) AND ( `user_id` = 1 ) AND ( `create_time` > 1434252701 ) LIMIT 1   [ RunTime:0.001404s ]
+
+[ 2015-06-15T11:31:44+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.006303s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.005120s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001611s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.004665s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000953s ]
+
+[ 2015-06-15T11:33:21+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002733s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001524s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002552s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001795s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002981s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001330s ]
+
+[ 2015-06-15T19:53:48+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.006057s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.057448s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003508s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.012285s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003606s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.011877s ]
+
+[ 2015-06-15T19:53:48+08:00 ] ::1 /game/api/game/User/verify
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001647s ]
+
+[ 2015-06-15T19:54:04+08:00 ] ::1 /game/api/game/User/verify?0.6296024408423807
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001398s ]
+
+[ 2015-06-15T19:54:05+08:00 ] ::1 /game/api/game/User/verify?0.7172965351193374
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000868s ]
+
+[ 2015-06-15T19:54:07+08:00 ] ::1 /game/api/game/User/verify?0.6816208017785839
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2015-06-15T19:54:15+08:00 ] ::1 /game/api/game/User/login
+SQL: SHOW COLUMNS FROM `hg_ucenter_member` [ RunTime:0.003690s ]
+SQL: SELECT * FROM `hg_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000757s ]
+SQL: UPDATE `hg_ucenter_member` SET `last_login_time`=1434369254,`last_login_ip`=0 WHERE ( `id` = 1 ) [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `hg_member` [ RunTime:0.003163s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `hg_member` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.002287s ]
+SQL: UPDATE `hg_member` SET `login`=`login`+1,`last_login_time`=1434369254,`last_login_ip`=0 WHERE ( `uid` = 1 ) [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `hg_action` [ RunTime:0.003031s ]
+SQL: SELECT * FROM `hg_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.001591s ]
+SQL: SHOW COLUMNS FROM `hg_action_log` [ RunTime:0.003093s ]
+SQL: INSERT INTO `hg_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (1,1,0,'member',1,1434369254,'admin在2015-06-15 19:54登录了后台') [ RunTime:0.001342s ]
+SQL: SELECT * FROM `hg_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.002160s ]
+NOTIC: [8] Undefined offset: 1 K:\www\game\api\Application\Common\Common\function.php 第 665 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given K:\www\game\api\Application\Common\Common\function.php 第 665 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hg_action_log` WHERE ( `action_id` = 1 ) AND ( `user_id` = 1 ) AND ( `create_time` > 1434282854 ) LIMIT 1   [ RunTime:0.000633s ]
+
+[ 2015-06-15T19:54:17+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003381s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002113s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003825s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001955s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002945s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002013s ]
+
+[ 2015-06-15T19:55:28+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.004658s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001572s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003518s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000919s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002659s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001125s ]
+

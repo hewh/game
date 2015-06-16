@@ -1,0 +1,69 @@
+<div class="mainBox" ng-controller="objList_ctrl">
+	<div class="obj-tab">
+		<h1 class="fl">目标</h1>
+		<span class="fl">
+			<a href="javascript:void(0)" class="{{newClass}}" ng-click="newObj()">新目标</a>
+			<a href="javascript:void(0)" class="{{receviceClass}}" ng-click="receiveObj()">已接收</a>
+			<a href="javascript:void(0)" class="{{finishClass}}" ng-click="finishObj()">已完成</a>
+			<a href="javascript:void(0)" class="{{sendClass}}" ng-click="sendObj()">我分派的</a>
+			<a href="javascript:void(0)" class="{{recycleClass}}" ng-click="recycle()">回收站</a>
+		</span>		
+		<a href="javascript:void(0)" class="fr tabCreatObj" ng-click="btnNew()">+ 创建目标</a>
+		<div class="c"></div>
+	</div>
+	<div class="obj-listBox">
+		<section class="obj-item" ng-repeat="mylist in objList">
+			<a href="#/oDetail/{{mylist.id}}">{{mylist.title}}</a>
+			<span>所属目标：{{mylist.fname}}</span>
+			<span>
+				<b class="fl">分派人：{{mylist.creator_name}}</b>
+				<b class="fr">截止日期：{{mylist.deadline|time_format}}</b>
+				<div class="c"></div>
+			</span>
+		</section>			
+		<div class="c"></div>
+		<div class="obj-attrBox box-shadow-left" ng-show="isNew">
+			<section>标题：<input class="obj-newFname" type="text" ng-model="nObj.title"  placeholder="点击此处输入目标标题"/></section>
+			<section><textarea ng-model="nObj.description" placeholder="点击此处输入目标描述"></textarea></section>
+			<!--&ndash;&gt;-->
+			<section class="pr">
+				负责人：<input class="obj-newFname" ng-click="openSelectR(1)" type="text" ng-model="nObj.responsibleName" placeholder="点击此处选择"/>
+				<div class="pa selectBox" ng-show="isOpenResponsible">
+					<ul>
+						<li ng-repeat="mList in members" ng-click="selectResponsible(mList.uid,mList.nickname)">{{mList.nickname}}</li>
+					</ul>
+					<a class="pa btnCloseSelect" ng-click="openSelectR(0)">关闭</a>
+				</div>
+			</section>
+			<section class="pr">
+				参与人：<a href="javascript:void(0)" class="btnOpenJoin" ng-click="openSelectJ(1)">+</a>
+				<p class="listJoins"></p>
+				<input type="hidden" id="tbJoin" ng-model="nObj.join" value="{{nObj.join}}"/>
+				<div class="pa selectBox" ng-show="isOpenJoin">
+					<ul>
+						<li ng-repeat="mList in members" ng-click="selectJoin(mList.uid,mList.nickname)">{{mList.nickname}}</li>
+					</ul>
+					<a class="pa btnCloseSelect" ng-click="openSelectJ(0)">关闭</a>
+				</div>
+			</section>
+			<section>级别：<input type="radio" class="obj_radio" name="obj-radio" ng-model="nObj.important" value="0" />普通&nbsp;&nbsp;<input type="radio" name="obj-radio" value="2" ng-model="nObj.important"  class="obj_radio"  >重要&nbsp;&nbsp;<input type="radio" name="obj-radio" value="5" ng-model="nObj.important"  class="obj_radio"/>非常重要</section>
+			<section>截止日期：<input class="obj-newFname" ng-model="nObj.deadline"  type="text" placeholder="点击输入日期"/></section>
+			<section><input class="obj-fotmBtn" type="submit" ng-click="saveObj()" value="保存"/><input class="obj-fotmBtn" type="submit" ng-click="cancelNew()" value="关闭"/></section>
+		</div>
+	</div>	
+</div>
+<script type="text/javascript">
+	$(".headBox").show();
+	function clearJoin(uid,_this){
+		$(_this).remove();
+		var s=$("#tbJoin").val(),newS="";
+		s= s.split(",");
+		for(var i=0;i< s.length;i++)
+			if(s[i]!=uid.toString())
+				newS+=s[i]+",";
+		if(newS!="")
+			newS=newS.substring(0,newS.length-1);
+		$("#tbJoin").val(newS);
+	}
+</script>
+

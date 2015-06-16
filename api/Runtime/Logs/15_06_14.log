@@ -1,0 +1,529 @@
+[ 2015-06-14T19:25:26+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.052537s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.003351s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.035868s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.003597s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.055095s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002803s ]
+
+[ 2015-06-14T19:25:26+08:00 ] ::1 /game/api/game/User/verify
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001957s ]
+
+[ 2015-06-14T19:25:41+08:00 ] ::1 /game/api/game/User/verify?0.7150258465611721
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2015-06-14T19:25:51+08:00 ] ::1 /game/api/game/User/verify?0.7466365754231369
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001005s ]
+
+[ 2015-06-14T19:26:02+08:00 ] ::1 /game/api/game/User/login
+SQL: SHOW COLUMNS FROM `hg_ucenter_member` [ RunTime:0.007639s ]
+SQL: SELECT * FROM `hg_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001900s ]
+SQL: UPDATE `hg_ucenter_member` SET `last_login_time`=1434281162,`last_login_ip`=0 WHERE ( `id` = 1 ) [ RunTime:0.003093s ]
+SQL: SHOW COLUMNS FROM `hg_member` [ RunTime:0.048208s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `hg_member` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.004848s ]
+SQL: UPDATE `hg_member` SET `login`=`login`+1,`last_login_time`=1434281162,`last_login_ip`=0 WHERE ( `uid` = 1 ) [ RunTime:0.002466s ]
+SQL: SHOW COLUMNS FROM `hg_action` [ RunTime:0.017305s ]
+SQL: SELECT * FROM `hg_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.004446s ]
+SQL: SHOW COLUMNS FROM `hg_action_log` [ RunTime:0.016990s ]
+SQL: INSERT INTO `hg_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (1,1,0,'member',1,1434281162,'admin在2015-06-14 19:26登录了后台') [ RunTime:0.009046s ]
+SQL: SELECT * FROM `hg_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.003154s ]
+NOTIC: [8] Undefined offset: 1 K:\www\game\api\Application\Common\Common\function.php 第 665 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given K:\www\game\api\Application\Common\Common\function.php 第 665 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hg_action_log` WHERE ( `action_id` = 1 ) AND ( `user_id` = 1 ) AND ( `create_time` > 1434194762 ) LIMIT 1   [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `hg_member` [ RunTime:0.003355s ]
+SQL: UPDATE `hg_member` SET `score`=score+10 WHERE ( uid=1 AND status>-1 ) [ RunTime:0.002620s ]
+
+[ 2015-06-14T19:26:05+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002807s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001358s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002339s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002978s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001014s ]
+
+[ 2015-06-14T19:28:22+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003315s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001607s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003779s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003305s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001377s ]
+
+[ 2015-06-14T19:28:58+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003465s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001542s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002974s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001216s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003083s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001230s ]
+
+[ 2015-06-14T19:30:39+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003271s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002101s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003069s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001598s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.004075s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001934s ]
+
+[ 2015-06-14T19:40:29+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003592s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002303s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003842s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002011s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003430s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001652s ]
+
+[ 2015-06-14T19:41:46+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003644s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002156s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003404s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002692s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003598s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002851s ]
+
+[ 2015-06-14T19:44:59+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002856s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001691s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003320s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001981s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003172s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001680s ]
+
+[ 2015-06-14T19:45:23+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003779s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002630s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.004201s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001497s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002763s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001272s ]
+
+[ 2015-06-14T19:54:36+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002575s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002454s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002500s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001530s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003398s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001508s ]
+
+[ 2015-06-14T19:56:51+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002903s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002199s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003350s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002938s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002916s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002497s ]
+
+[ 2015-06-14T19:59:32+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003116s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001169s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002855s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002701s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000966s ]
+
+[ 2015-06-14T20:05:15+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003595s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002457s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003939s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002743s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003267s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002832s ]
+
+[ 2015-06-14T20:06:45+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003568s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002115s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003901s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001469s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003184s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001621s ]
+
+[ 2015-06-14T20:07:12+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002665s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001857s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003201s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002505s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002454s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002089s ]
+
+[ 2015-06-14T20:07:27+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002613s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002208s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000235s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002269s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000245s ]
+
+[ 2015-06-14T20:07:32+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003770s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002238s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003407s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002235s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003182s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001958s ]
+
+[ 2015-06-14T20:09:42+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003342s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002191s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002382s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000324s ]
+
+[ 2015-06-14T20:10:33+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002949s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001294s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003533s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003314s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001175s ]
+
+[ 2015-06-14T20:10:55+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003831s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002908s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002525s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002714s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002814s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002996s ]
+
+[ 2015-06-14T20:11:13+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.004302s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002846s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.013466s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003280s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000354s ]
+
+[ 2015-06-14T20:11:24+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002344s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001561s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002982s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001331s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003629s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001232s ]
+
+[ 2015-06-14T20:11:38+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002583s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001126s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002771s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002820s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001644s ]
+
+[ 2015-06-14T20:48:04+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003533s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002508s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003175s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002666s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003677s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001480s ]
+
+[ 2015-06-14T20:50:36+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002754s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001982s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002807s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001244s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002945s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001404s ]
+
+[ 2015-06-14T21:06:20+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003274s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001578s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002634s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003045s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001110s ]
+
+[ 2015-06-14T21:06:24+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.004583s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001447s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003743s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001344s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003992s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001542s ]
+
+[ 2015-06-14T21:13:38+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003473s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003324s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003366s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000540s ]
+
+[ 2015-06-14T21:17:37+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003449s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002115s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003464s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001470s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002967s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001374s ]
+
+[ 2015-06-14T21:18:01+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.004021s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001734s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003941s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001510s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003922s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001486s ]
+
+[ 2015-06-14T21:19:52+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003787s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002056s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003021s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002052s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003479s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001861s ]
+
+[ 2015-06-14T21:21:03+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002515s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001304s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002311s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002883s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000931s ]
+
+[ 2015-06-14T21:23:07+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002534s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001351s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002554s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000935s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002786s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001593s ]
+
+[ 2015-06-14T21:24:02+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003114s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002865s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002243s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000605s ]
+
+[ 2015-06-14T21:25:04+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003928s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001971s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003113s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001277s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002767s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001388s ]
+
+[ 2015-06-14T21:26:52+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003686s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001756s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003475s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001353s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003494s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001429s ]
+
+[ 2015-06-14T21:27:04+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003481s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.000911s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002222s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002460s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000417s ]
+
+[ 2015-06-14T21:28:39+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003431s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002159s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003121s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002726s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003227s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002936s ]
+
+[ 2015-06-14T21:30:59+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002271s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002681s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002846s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001122s ]
+
+[ 2015-06-14T21:33:04+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002558s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002060s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002489s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002644s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002491s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001466s ]
+
+[ 2015-06-14T21:35:48+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002505s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001587s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002370s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001222s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003173s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001210s ]
+
+[ 2015-06-14T21:36:34+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.004087s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001808s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003214s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001630s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.005354s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.003302s ]
+
+[ 2015-06-14T21:36:51+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002947s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001332s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003474s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002318s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000952s ]
+
+[ 2015-06-14T21:38:12+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003272s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002349s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002433s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001255s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003344s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001247s ]
+
+[ 2015-06-14T21:45:21+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003930s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.003519s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003372s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002121s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.004990s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002459s ]
+
+[ 2015-06-14T21:46:45+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003504s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002129s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003788s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002045s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003245s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002182s ]
+
+[ 2015-06-14T21:47:56+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.004387s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.003455s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.004139s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.003683s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003392s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002004s ]
+
+[ 2015-06-14T21:48:53+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003799s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002350s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.004335s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001579s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002857s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001646s ]
+
+[ 2015-06-14T21:50:04+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002465s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002207s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003067s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001234s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002965s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001396s ]
+
+[ 2015-06-14T21:51:17+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002366s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001344s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002911s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003152s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000726s ]
+
+[ 2015-06-14T21:53:13+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003459s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001095s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003661s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003620s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000580s ]
+
+[ 2015-06-14T21:56:55+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003876s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001696s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003292s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001611s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.004068s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001276s ]
+
+[ 2015-06-14T21:59:24+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.004359s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002260s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.004111s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001614s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003982s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001585s ]
+
+[ 2015-06-14T22:00:32+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003498s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002454s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.004040s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001609s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003377s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001583s ]
+
+[ 2015-06-14T22:01:36+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.004038s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001777s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003522s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001302s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.004092s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001588s ]
+
+[ 2015-06-14T22:02:21+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.004870s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.003481s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003134s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001312s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002824s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001333s ]
+
+[ 2015-06-14T22:03:16+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003856s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002514s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003326s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002668s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003591s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.003012s ]
+
+[ 2015-06-14T22:05:11+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003818s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001318s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003222s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001020s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003067s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000938s ]
+
+[ 2015-06-14T22:06:49+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003469s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003991s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001847s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002821s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001087s ]
+
+[ 2015-06-14T22:07:34+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002911s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002044s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002898s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003157s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001113s ]
+
+[ 2015-06-14T22:10:55+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.004087s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002470s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003289s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002627s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003518s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001978s ]
+
+[ 2015-06-14T22:12:44+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003201s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002074s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002999s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002836s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003879s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002676s ]
+

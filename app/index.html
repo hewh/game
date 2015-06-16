@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>成长游戏</title>
+		<link rel="stylesheet" type="text/css" href="css/objMenage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"/>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="app.js"></script>
+		<script src="module/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="module/game_service.js" type="text/javascript" charset="utf-8"></script>	
+		<script src="control/mark_controller.js" type="text/javascript" charset="utf-8"></script>
+		<script src="control/detail_controller.js" type="text/javascript" charset="utf-8"></script>
+		<script src="control/user_controller.js" type="text/javascript" charset="utf-8"></script>
+		<script src="control/banner_controller.js" type="text/javascript" charset="utf-8"></script>
+		<script src="module/filter.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body ng-app="mboApp">
+		<header class="headBox box-shadow-bottom words-shadow" ng-controller="banner_ctrl">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#/mark">计分</a></li>
+        <li><a href="#/oList">统计</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>		<!--	<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container">
+				<a href="#/mark">计分</a>
+				<a href="#/oList">统计</a>
+				</div>
+			</nav>-->
+
+			<section class="quickBar fr">
+				<a href="" class="d fl news" style="color:#ccc;">消息<i>&nbsp;</i></a>
+                <a href="javascript:void(0)" class="d fl">{{$root.username}}</a>
+                &nbsp;
+                <a href="javascript:void (0)" ng-click="logout()">注销</a>
+			</section>
+			<div class="c"></div>
+		</header>		
+		<div ng-view></div>		
+		
+	</body>
+</html>

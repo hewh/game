@@ -1,0 +1,911 @@
+[ 2015-06-13T17:23:09+08:00 ] ::1 /game/api/game/user/login
+ERR: 模板不存在:./Application/Game/View/default/User/login.html
+
+[ 2015-06-13T17:23:41+08:00 ] ::1 /game/api/game/user/login
+ERR: 模板不存在:./Application/Game/View/default/User/login.html
+
+[ 2015-06-13T17:23:42+08:00 ] ::1 /game/api/game/user/login
+ERR: 模板不存在:./Application/Game/View/default/User/login.html
+
+[ 2015-06-13T17:23:43+08:00 ] ::1 /game/api/game/user/login
+ERR: 模板不存在:./Application/Game/View/default/User/login.html
+
+[ 2015-06-13T17:29:02+08:00 ] ::1 /game/api/game/user/login
+ERR: 模板不存在:./Application/Game/View/default/User/login.html
+
+[ 2015-06-13T17:29:05+08:00 ] ::1 /game/api/game/user/login
+ERR: 模板不存在:./Application/Game/View/default/User/login.html
+
+[ 2015-06-13T17:29:09+08:00 ] ::1 /game/api/game/user/login
+ERR: 模板不存在:./Application/Game/View/default/User/login.html
+
+[ 2015-06-13T17:29:22+08:00 ] ::1 /game/api/game/user/login
+ERR: 模板不存在:./Application/Game/View/default/User/login.html
+
+[ 2015-06-13T17:29:32+08:00 ] ::1 /game/api/game/user/login
+ERR: 模板不存在:./Application/Game/View/default/User/login.html
+
+[ 2015-06-13T17:31:38+08:00 ] ::1 /game/api/game/user/login
+ERR: 模板不存在:./Application/Game/View/default/User/login.html
+
+[ 2015-06-13T20:03:58+08:00 ] ::1 /game/api/game/User/login
+ERR: Think\Model:login方法不存在！
+
+[ 2015-06-13T20:04:21+08:00 ] ::1 /game/api/game/User/login
+ERR: Think\Model:login方法不存在！
+
+[ 2015-06-13T20:10:43+08:00 ] ::1 /game/api/game/User/verify?0.7239560028656278
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2015-06-13T20:10:52+08:00 ] ::1 /game/api/game/User/login
+SQL: SHOW COLUMNS FROM `hg_ucenter_member` [ RunTime:0.003379s ]
+SQL: SELECT * FROM `hg_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000645s ]
+SQL: UPDATE `hg_ucenter_member` SET `last_login_time`=1434197452,`last_login_ip`=0 WHERE ( `id` = 1 ) [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `hg_member` [ RunTime:0.004586s ]
+ERR: Think\Model:login方法不存在！
+
+[ 2015-06-13T20:14:24+08:00 ] ::1 /game/api/game/User/verify?0.7030330642833649
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001131s ]
+
+[ 2015-06-13T20:14:32+08:00 ] ::1 /game/api/game/User/login
+SQL: SHOW COLUMNS FROM `hg_ucenter_member` [ RunTime:0.004865s ]
+SQL: SELECT * FROM `hg_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001563s ]
+SQL: UPDATE `hg_ucenter_member` SET `last_login_time`=1434197672,`last_login_ip`=0 WHERE ( `id` = 1 ) [ RunTime:0.002251s ]
+SQL: SHOW COLUMNS FROM `hg_member` [ RunTime:0.003589s ]
+ERR: Think\Model:login方法不存在！
+
+[ 2015-06-13T20:18:48+08:00 ] ::1 /game/api/game/User/verify?0.8004638922079744
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001140s ]
+
+[ 2015-06-13T20:18:58+08:00 ] ::1 /game/api/game/User/login
+SQL: SHOW COLUMNS FROM `hg_ucenter_member` [ RunTime:0.002851s ]
+SQL: SELECT * FROM `hg_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000490s ]
+SQL: UPDATE `hg_ucenter_member` SET `last_login_time`=1434197937,`last_login_ip`=0 WHERE ( `id` = 1 ) [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `hg_member` [ RunTime:0.003411s ]
+ERR: Think\Model:login方法不存在！
+
+[ 2015-06-13T20:29:48+08:00 ] ::1 /game/api/game/User/verify?0.37888020551058643
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001180s ]
+
+[ 2015-06-13T20:29:55+08:00 ] ::1 /game/api/game/User/login
+SQL: SHOW COLUMNS FROM `hg_ucenter_member` [ RunTime:0.006797s ]
+SQL: SELECT * FROM `hg_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001657s ]
+SQL: UPDATE `hg_ucenter_member` SET `last_login_time`=1434198595,`last_login_ip`=0 WHERE ( `id` = 1 ) [ RunTime:0.001948s ]
+NOTIC: D方法实例化没找到模型类Home\Game\Model\MemberModel
+SQL: SHOW COLUMNS FROM `hg_member` [ RunTime:0.003780s ]
+ERR: Think\Model:login方法不存在！
+
+[ 2015-06-13T20:30:52+08:00 ] ::1 /game/api/game/User/verify?0.7903882682627535
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001206s ]
+
+[ 2015-06-13T20:31:00+08:00 ] ::1 /game/api/game/User/login
+SQL: SHOW COLUMNS FROM `hg_ucenter_member` [ RunTime:0.002998s ]
+SQL: SELECT * FROM `hg_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000465s ]
+SQL: UPDATE `hg_ucenter_member` SET `last_login_time`=1434198660,`last_login_ip`=0 WHERE ( `id` = 1 ) [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `hg_member` [ RunTime:0.002513s ]
+ERR: Think\Model:login方法不存在！
+
+[ 2015-06-13T20:32:21+08:00 ] ::1 /game/api/game/User/verify?0.7406740383544584
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001841s ]
+
+[ 2015-06-13T20:32:22+08:00 ] ::1 /game/api/game/User/verify?0.5988668080727905
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001159s ]
+
+[ 2015-06-13T20:32:23+08:00 ] ::1 /game/api/game/User/verify?0.3427686841951937
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001785s ]
+
+[ 2015-06-13T20:32:34+08:00 ] ::1 /game/api/game/User/login
+SQL: SHOW COLUMNS FROM `hg_ucenter_member` [ RunTime:0.005264s ]
+SQL: SELECT * FROM `hg_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001604s ]
+SQL: UPDATE `hg_ucenter_member` SET `last_login_time`=1434198754,`last_login_ip`=0 WHERE ( `id` = 1 ) [ RunTime:0.001578s ]
+SQL: SHOW COLUMNS FROM `hg_member` [ RunTime:0.003428s ]
+ERR: Think\Model:login方法不存在！
+
+[ 2015-06-13T20:32:40+08:00 ] ::1 /game/api/game/User/verify?0.3453719510541795
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001454s ]
+
+[ 2015-06-13T20:32:46+08:00 ] ::1 /game/api/game/User/login
+SQL: SHOW COLUMNS FROM `hg_ucenter_member` [ RunTime:0.002767s ]
+SQL: SELECT * FROM `hg_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000577s ]
+SQL: UPDATE `hg_ucenter_member` SET `last_login_time`=1434198766,`last_login_ip`=0 WHERE ( `id` = 1 ) [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `hg_member` [ RunTime:0.004913s ]
+ERR: Think\Model:login方法不存在！
+
+[ 2015-06-13T20:35:47+08:00 ] ::1 /game/api/game/User/verify?0.030853434455162088
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001880s ]
+
+[ 2015-06-13T20:35:56+08:00 ] ::1 /game/api/game/User/login
+SQL: SHOW COLUMNS FROM `hg_ucenter_member` [ RunTime:0.003445s ]
+SQL: SELECT * FROM `hg_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.002382s ]
+SQL: UPDATE `hg_ucenter_member` SET `last_login_time`=1434198956,`last_login_ip`=0 WHERE ( `id` = 1 ) [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `hg_member` [ RunTime:0.003623s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `hg_member` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001179s ]
+SQL: UPDATE `hg_member` SET `login`=`login`+1,`last_login_time`=1434198956,`last_login_ip`=0 WHERE ( `uid` = 1 ) [ RunTime:0.001284s ]
+SQL: SHOW COLUMNS FROM `hg_ucenter_member` [ RunTime:0.002699s ]
+SQL: SELECT `id`,`username`,`email`,`mobile`,`status` FROM `hg_ucenter_member` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001010s ]
+SQL: SHOW COLUMNS FROM `hg_action` [ RunTime:0.004698s ]
+SQL: SELECT * FROM `hg_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.004134s ]
+SQL: SHOW COLUMNS FROM `hg_action_log` [ RunTime:0.004506s ]
+SQL: INSERT INTO `hg_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (1,1,0,'member',1,1434198956,'admin在2015-06-13 20:35登录了后台') [ RunTime:0.001167s ]
+SQL: SELECT * FROM `hg_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.001228s ]
+NOTIC: [8] Undefined offset: 1 K:\www\game\api\Application\Common\Common\function.php 第 665 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given K:\www\game\api\Application\Common\Common\function.php 第 665 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hg_action_log` WHERE ( `action_id` = 1 ) AND ( `user_id` = 1 ) AND ( `create_time` > 1434112556 ) LIMIT 1   [ RunTime:0.002921s ]
+ERR: Think\Model:getInfo方法不存在！
+
+[ 2015-06-13T20:37:45+08:00 ] ::1 /game/api/game/User/verify?0.3643634258474203
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001363s ]
+
+[ 2015-06-13T20:37:52+08:00 ] ::1 /game/api/game/User/login
+SQL: SHOW COLUMNS FROM `hg_ucenter_member` [ RunTime:0.005578s ]
+SQL: SELECT * FROM `hg_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001505s ]
+SQL: UPDATE `hg_ucenter_member` SET `last_login_time`=1434199072,`last_login_ip`=0 WHERE ( `id` = 1 ) [ RunTime:0.001139s ]
+SQL: SHOW COLUMNS FROM `hg_member` [ RunTime:0.002633s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `hg_member` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000426s ]
+SQL: UPDATE `hg_member` SET `login`=`login`+1,`last_login_time`=1434199072,`last_login_ip`=0 WHERE ( `uid` = 1 ) [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `hg_action` [ RunTime:0.002919s ]
+SQL: SELECT * FROM `hg_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `hg_action_log` [ RunTime:0.002360s ]
+SQL: INSERT INTO `hg_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (1,1,0,'member',1,1434199072,'admin在2015-06-13 20:37登录了后台') [ RunTime:0.000382s ]
+SQL: SELECT * FROM `hg_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000353s ]
+NOTIC: [8] Undefined offset: 1 K:\www\game\api\Application\Common\Common\function.php 第 665 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given K:\www\game\api\Application\Common\Common\function.php 第 665 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hg_action_log` WHERE ( `action_id` = 1 ) AND ( `user_id` = 1 ) AND ( `create_time` > 1434112672 ) LIMIT 1   [ RunTime:0.000355s ]
+
+[ 2015-06-13T20:48:18+08:00 ] ::1 /game/api/game/User/logout
+SQL: SHOW COLUMNS FROM `hg_member` [ RunTime:0.003693s ]
+
+[ 2015-06-13T20:48:19+08:00 ] ::1 /game/api/game/User/verify
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001594s ]
+
+[ 2015-06-13T20:48:33+08:00 ] ::1 /game/api/game/User/login
+SQL: SHOW COLUMNS FROM `hg_ucenter_member` [ RunTime:0.003407s ]
+SQL: SELECT * FROM `hg_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000643s ]
+SQL: UPDATE `hg_ucenter_member` SET `last_login_time`=1434199713,`last_login_ip`=0 WHERE ( `id` = 1 ) [ RunTime:0.001062s ]
+SQL: SHOW COLUMNS FROM `hg_member` [ RunTime:0.003056s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `hg_member` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000939s ]
+SQL: UPDATE `hg_member` SET `login`=`login`+1,`last_login_time`=1434199713,`last_login_ip`=0 WHERE ( `uid` = 1 ) [ RunTime:0.001259s ]
+SQL: SHOW COLUMNS FROM `hg_action` [ RunTime:0.003020s ]
+SQL: SELECT * FROM `hg_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `hg_action_log` [ RunTime:0.003060s ]
+SQL: INSERT INTO `hg_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (1,1,0,'member',1,1434199713,'admin在2015-06-13 20:48登录了后台') [ RunTime:0.001197s ]
+SQL: SELECT * FROM `hg_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.001303s ]
+NOTIC: [8] Undefined offset: 1 K:\www\game\api\Application\Common\Common\function.php 第 665 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given K:\www\game\api\Application\Common\Common\function.php 第 665 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hg_action_log` WHERE ( `action_id` = 1 ) AND ( `user_id` = 1 ) AND ( `create_time` > 1434113313 ) LIMIT 1   [ RunTime:0.000805s ]
+
+[ 2015-06-13T21:35:42+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: select * from hg_g_item where family_id=1 [ RunTime:0.000713s ]
+ERR: 1146:Table 'root.hg_g_item' doesn't exist
+ [ SQL语句 ] : select * from hg_g_item where family_id=1
+
+[ 2015-06-13T21:37:04+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: select * from hg_g_item where family_id=1 [ RunTime:0.001306s ]
+ERR: 1146:Table 'root.hg_g_item' doesn't exist
+ [ SQL语句 ] : select * from hg_g_item where family_id=1
+NOTIC: [8] Use of undefined constant getError - assumed 'getError' K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 22 行.
+NOTIC: [8] Object of class Think\Model could not be converted to int K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 22 行.
+
+[ 2015-06-13T21:37:28+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002807s ]
+ERR: 1146:Table 'root.hg_g_item' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hg_g_item`
+SQL: select * from hg_g_item where family_id=1 [ RunTime:0.000434s ]
+ERR: 1146:Table 'root.hg_g_item' doesn't exist
+ [ SQL语句 ] : select * from hg_g_item where family_id=1
+NOTIC: [8] Use of undefined constant getError - assumed 'getError' K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 22 行.
+NOTIC: [8] Object of class Think\Model could not be converted to int K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 22 行.
+
+[ 2015-06-13T21:37:43+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003735s ]
+ERR: 1146:Table 'root.hg_g_item' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hg_g_item`
+SQL: select * from hg_g_item where family_id=1 [ RunTime:0.001282s ]
+ERR: 1146:Table 'root.hg_g_item' doesn't exist
+ [ SQL语句 ] : select * from hg_g_item where family_id=1
+
+[ 2015-06-13T21:38:01+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002384s ]
+ERR: 1146:Table 'root.hg_g_item' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hg_g_item`
+SQL: select * from hg_g_item where family_id=1 [ RunTime:0.000545s ]
+ERR: 1146:Table 'root.hg_g_item' doesn't exist
+ [ SQL语句 ] : select * from hg_g_item where family_id=1
+
+[ 2015-06-13T21:38:42+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002940s ]
+ERR: 1146:Table 'root.hg_g_item' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hg_g_item`
+SQL: select * from hg_g_item where family_id=1 [ RunTime:0.001635s ]
+ERR: 1146:Table 'root.hg_g_item' doesn't exist
+ [ SQL语句 ] : select * from hg_g_item where family_id=1
+
+[ 2015-06-13T21:41:23+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.001880s ]
+ERR: 1146:Table 'root.hg_g_item' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hg_g_item`
+SQL: select * from hg_g_item where family_id=1 [ RunTime:0.000330s ]
+ERR: 1146:Table 'root.hg_g_item' doesn't exist
+ [ SQL语句 ] : select * from hg_g_item where family_id=1
+
+[ 2015-06-13T21:43:00+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002609s ]
+SQL: select * from hg_g_item where family_id=1 [ RunTime:0.001153s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at K:\www\game\api\ThinkPHP\Common\functions.php:682) K:\www\game\api\ThinkPHP\Library\Think\Controller.class.php 第 214 行.
+
+[ 2015-06-13T21:49:46+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002404s ]
+SQL: SELECT * FROM `hg_g_item`  [ RunTime:0.000612s ]
+
+[ 2015-06-13T21:50:11+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002803s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002100s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003187s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001551s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003321s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001293s ]
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+
+[ 2015-06-13T21:50:51+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003766s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002889s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003640s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002134s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.004653s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.003506s ]
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 27 行.
+
+[ 2015-06-13T21:59:19+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003437s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001582s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.004033s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001646s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003411s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001369s ]
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+
+[ 2015-06-13T22:00:25+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003237s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002229s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003194s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001605s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003635s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001746s ]
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+NOTIC: [8] Undefined index: item_type K:\www\game\api\Application\Game\Controller\ScoreController.class.php 第 28 行.
+
+[ 2015-06-13T22:01:09+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002777s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002167s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002082s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000345s ]
+
+[ 2015-06-13T22:01:47+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003178s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001930s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002582s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001406s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002993s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001860s ]
+
+[ 2015-06-13T22:02:06+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002502s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002455s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002162s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000289s ]
+
+[ 2015-06-13T22:06:00+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.004808s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.002078s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003152s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001249s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003424s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001408s ]
+
+[ 2015-06-13T22:13:52+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.004300s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.003183s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003985s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002099s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.004899s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001837s ]
+
+[ 2015-06-13T22:21:44+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003304s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001967s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003690s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001571s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003829s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001484s ]
+
+[ 2015-06-13T22:23:12+08:00 ] ::1 /game/api/game/score/getmarkform
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003676s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.003156s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.005117s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001614s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003672s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001388s ]
+
+[ 2015-06-13T22:23:54+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.002200s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002308s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002427s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000361s ]
+
+[ 2015-06-13T22:24:13+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003991s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.003259s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003787s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002064s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.004725s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002213s ]
+
+[ 2015-06-13T22:25:10+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003618s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001933s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.004396s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001590s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003453s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.002139s ]
+
+[ 2015-06-13T22:26:34+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003680s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001243s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003465s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002943s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.000777s ]
+
+[ 2015-06-13T22:32:10+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003227s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001735s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.002991s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.002910s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001075s ]
+
+[ 2015-06-13T22:32:57+08:00 ] ::1 /game/api/game/Score/getMarkForm
+SQL: SHOW COLUMNS FROM `hg_g_item` [ RunTime:0.003207s ]
+SQL: SELECT * FROM `hg_g_item` WHERE ( `family_id` = 1 )  [ RunTime:0.001554s ]
+SQL: SHOW COLUMNS FROM `hg_g_item_type` [ RunTime:0.003158s ]
+SQL: SELECT * FROM `hg_g_item_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001134s ]
+SQL: SHOW COLUMNS FROM `hg_g_score_type` [ RunTime:0.003383s ]
+SQL: SELECT * FROM `hg_g_score_type` WHERE ( `family_id` = 1 )  [ RunTime:0.001308s ]
+

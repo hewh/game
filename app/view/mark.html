@@ -1,0 +1,12 @@
+<div ng-controller="mark_ctrl" class="container-fluid">
+    <form action="#" >
+        <div ng-repeat="type in mark_form">
+					 <h3 class="bg-info">{{type.title}}</h3> 
+            <div ng-repeat="item in type.items  " class="form-group row">
+               <label class="col-md-6 col-sm-6 col-xs-6">{{item.title}}({{item.score}})</label>
+                <input class="col-md-2 col-sm-2 col-xs-2" type="checkbox" id="item" value="{{item.id}}" ng-click="setV(item.id)">
+                <h5 class="col-md-2 col-sm-2 col-xs-2">{{item.get_score}}</h5>
+            </div>
+        </div>
+    </form>
+</div>

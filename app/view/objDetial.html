@@ -1,0 +1,91 @@
+<div class="mainBox" ng-controller="objDetail_ctrl">
+	<div class="mainObj">
+		<section class="pr">
+			<i class="d fl myobj-title {{obj_myClass}}" ng-click="enterObj(mainOList[0].id,0)">
+				目标名：{{mainOList[0].title}}		
+			</i>
+			<i class="fr objInfo">
+				{{mainOList[0].deadline | between_time:2}}截止
+				<!--<a href="javascript:void(0)" ng-click="openTree(1)">更换节点</a>&nbsp;&nbsp;-->
+				<a href="javascript:void(0)" ng-click="dropMyObj(mainOList[0].id)">编辑</a>
+				<a href="javascript:void(0)" ng-click="delete(1,mainOList[0])" ng-if="mainOList[0].status!=9 && mainOList[0].status!=-1">撤消</a>&nbsp;&nbsp;
+				<a href="javascript:void(0)" ng-click="restore(1,mainOList[0])" ng-if="mainOList[0].status==9 || mainOList[0].status==-1">还原</a>&nbsp;&nbsp;
+			</i>
+			<div class="c"></div>
+			<span class="d item-home-sub pa obj-edit-layer" ng-show="mainOList[0].editShow">
+				<div class="item-editBox">标题：<input class="obj-newFname item-editBox-title" type="text" ng-model="nObj.title" value="{{nObj.title}}"  placeholder="点击此处输入任务标题"/></div>
+				<div class="item-editBox">描述：<textarea placeholder="任务描述" class="item-description" ng-model="nObj.description"></textarea></div>
+
+				<div class="item-editBox">
+					<section class="pr fl">
+						负责人：<input class="obj-newFname" ng-click="openSelectR(1)"  type="text" ng-model="nObj.responsibleName" placeholder="点击此处选择"/>
+						<div class="pa selectBox" ng-show="isOpenResponsible">
+							<ul >
+								<li ng-repeat="mList in members" ng-click="selectResponsible(mList.uid,mList.nickname)">{{mList.nickname}}</li>
+							</ul>
+							<a class="pa btnCloseSelect" ng-click="openSelectR(0)">关闭</a>
+						</div>
+					</section>
+					<section class="fl">级别：<input type="radio" class="obj_radio" name="obj-radio0" ng-model="nObj.important"  value="0" />普通&nbsp;&nbsp;<input type="radio" name="obj-radio0" value="2" ng-model="nObj.important"  class="obj_radio"  >重要&nbsp;&nbsp;<input type="radio" name="obj-radio0" value="5" ng-model="nObj.important"  class="obj_radio"/>非常重要</section>
+					<section class="fl">截止日期：<input class="obj-newFname" ng-model="nObj.deadline"  type="text" placeholder="点击输入日期"/></section>
+					<div class="c"></div>
+				</div>
+				<div class="item-editBox pr">
+					<i class="fl">参与人：<a href="javascript:void(0)" class="btnOpenJoin" ng-click="openSelectJ(1)">+</a></i>
+					<p class="listJoins fl"></p>
+					<div class="c"></div>
+					<input type="hidden" id="tbJoin" ng-model="nObj.join" value="{{nObj.join}}"/>
+					<div class="pa selectBox" ng-show="isOpenJoin">
+						<ul>
+							<li ng-repeat="mList in members" ng-click="selectJoin(mList.uid,mList.nickname)">{{mList.nickname}}</li>
+						</ul>
+						<a class="pa btnCloseSelect" ng-click="openSelectJ(0)">关闭</a>
+					</div>
+				</div>
+				<div class="item-editBox"><a href="javascript:void(0)" class="item-editBox-btn" ng-click="saveObj()">保存</a></div>
+			</span>
+			<div class="c"></div>
+		</section>
+	</div>
+	<div class="oDetail-l fl">			
+		<section class="taskTab">
+			<h1 class="fl">子目标</h1>
+			<a href="javascript:void(0)" class="btnNewChild fr" ng-click="openNewO()">+ 子目标&nbsp;&nbsp;</a>
+			<div class="c"></div>
+		</section>
+		<!--弹出树-->
+		<div ng-include="'template/objEdit.html'" style="padding:0 5px;"></div>
+	</div>
+	<div class="oDetail-r fr">
+		<section class="taskTab">
+			<h1 class="fl">任务</h1>
+			<span class="fl">
+			<a href="javascript:void(0)" ng-click="setStatus(0)" class="{{tabClass_task.doTask}}">待办({{daiban}})</a>
+			<a href="javascript:void(0)" ng-click="setStatus(1)" class="{{tabClass_task.findshTask}}">已办({{yiban}})</a>
+			<a href="javascript:void(0)" ng-click="setStatus(9)" class="{{tabClass_task.chexiaoTask}}">已撤销({{chexiao}})</a>
+		</span>
+			<a href="javascript:void(0)" class="btnNewChild fr" ng-click="openEditTask(0)">+ 子任务&nbsp;&nbsp;</a>
+			<div class="c"></div>
+		</section>
+		<section><input type="text" class="tbAddTask" name="submit" ng-model="task.title" value="{{task.title}}" ng-keyup="addTask($event,task.title)" placeholder="按enter添加快速任务"></section>
+		<div ng-include="'template/editTask.html'" style="padding:0 5px;"></div>
+	</div>
+	<div class="c"></div>
+	<!--弹出层-->
+	<div ng-include="'template/popLayer.html'"></div>
+
+</div>
+<script type="text/javascript">
+	$(".headBox").show();
+	function clearJoin(uid,_this){
+		$(_this).remove();
+		var s=$("#tbJoin").val(),newS="";
+		s= s.split(",");
+		for(var i=0;i< s.length;i++)
+			if(s[i]!=uid.toString())
+				newS+=s[i]+",";
+		if(newS!="")
+			newS=newS.substring(0,newS.length-1);
+		$("#tbJoin").val(newS);
+	}
+</script>

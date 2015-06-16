@@ -1,0 +1,50 @@
+<section class="item-home" ng-repeat="showSubtask in subTlist | filter:{status:status}  | orderBy :'create_time'">
+    <p>
+				<span class="fl" ng-if="showSubtask.status=='1'">
+					<input checked class="checkBoxTask fl" type="checkbox" name="wancheng" ng-click="changeStatus(showSubtask)"  />
+				</span>
+				<span class="fl" ng-if="showSubtask.status=='0'">
+					<input  class="checkBoxTask fl" type="checkbox" name="wancheng" ng-click="changeStatus(showSubtask)"  />
+				</span>
+        <span class="fl d subTitle" ng-click="dropEdit(showSubtask.id)">{{showSubtask.title}}</span>
+        <span class="fl item-home-sub" ng-show="showSubtask.status== 0 ">{{showSubtask.deadline | between_time:2}}截止</span>
+
+        <span class="fl item-home-sub" ng-hide="showSubtask.status== 0">{{showSubtask.finish_time}}完成</span>
+        <a class="fr item-home-sub" href="javascript:void(0)" ng-click="delete(2,showSubtask)" ng-if="showSubtask.status != 9">撤消</a>
+        <a class="fr item-home-sub" href="javascript:void(0)" ng-click="restore(2,showSubtask)" ng-if="showSubtask.status == 9">还原</a>
+    <div class="c"></div>
+    </p>
+			<span class="d item-home-sub" style="border:1px solid red;margin-left: -6px;width: 101.5%;" ng-show="showSubtask.editShow" ng-if="showSubtask.status != 9">
+				<div class="item-editBox">标题：<input class="obj-newFname item-editBox-title" type="text" ng-model="nTask.title" value="{{nTask.title}}"  placeholder="点击此处输入任务标题"/></div>
+				<div class="item-editBox">描述：<textarea placeholder="任务描述" class="item-description" ng-model="nTask.description"></textarea></div>
+
+				<div class="item-editBox">
+                    <!--<section class="fl pr">-->
+                    <!--创建人：<input class="obj-newFname" ng-click="openSelectC(1)"  type="text" ng-model="nTask.creatorName" placeholder="点击此处选择"/>-->
+                    <!--<div class="pa selectBox" ng-show="isOpenCreat">-->
+                    <!--<ul >-->
+                    <!--<li ng-repeat="mList in members" ng-click="selectCreat(mList.uid,mList.nickname)">{{mList.nickname}}</li>-->
+                    <!--</ul>-->
+                    <!--<a class="pa btnCloseSelect" ng-click="openSelectC(0)">关闭</a>-->
+                    <!--</div>-->
+                    <!--</section>-->
+                    <section class="pr fr">
+                        负责人：<input class="obj-newFname" ng-click="openSelectR(1)"  type="text" ng-model="nTask.responsibleName" placeholder="点击此处选择"/>
+                        <div class="pa selectBox" ng-show="isOpenResponsible">
+                            <ul >
+                                <li ng-repeat="mList in members" ng-click="selectResponsible(mList.uid,mList.nickname)">{{mList.nickname}}</li>
+                            </ul>
+                            <a class="pa btnCloseSelect" ng-click="openSelectR(0)">关闭</a>
+                        </div>
+                    </section>
+                    <div class="c"></div>
+                </div>
+				<div class="item-editBox">
+                    <section class="fl">开始日期：<input class="obj-newFname" ng-model="nTask.start_time"  type="text" placeholder="点击输入日期"/></section>
+                    <section class="fr">截止日期：<input class="obj-newFname" ng-model="nTask.deadline"  type="text" placeholder="点击输入日期"/></section>
+                    <div class="c"></div>
+                </div>
+				<div class="item-editBox"><a href="javascript:void(0)" class="item-editBox-btn" ng-click="saveTask(showSubtask)">保存</a></div>
+			</span>
+    <div class="c"></div>
+</section>

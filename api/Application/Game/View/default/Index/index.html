@@ -1,0 +1,84 @@
+<extend name="Base/common"/>
+<block name="mainPart">
+    <div class="mainBox" ng-app="homeApp" ng-init="myObjUrl='{:U("Index/ajaxOlist")}';todoUrl='{:U("Index/ajaxToDoList")}';dynamicUrl='{:U("Index/ajaxDynamic")}'">
+        <div class="mainBox-left fl">
+            <div class="myObj-home"  ng-controller="myObj_ctrl" >
+                <h1>我的目标</h1>
+                <section class="item-home" ng-repeat="myOlist in objList">
+                    <a href="#" class="d fl item-home-title">{{myOlist.title}}</a>
+						<span class="d fr pr">创建人：{{myOlist.creator}} &nbsp;&nbsp;
+							<a href="javascript:void(0)" ng-hide="myOlist.is_recive|receive_status" tourl="{:U('index')}" class="btn-receive" ng-click="receive(myOlist.id,'{:U("Objective/ajaxRecieve")}')">接收</a>
+						</span>
+                    <a href="" class="d fl item-home-sub item-home-title">所属目标：{{myOlist.fid}}</a>
+                    <span class="d fr item-home-sub">截止日期：{{myOlist.deadline|time_format}}</span>
+                    <div class="c"></div>
+                </section>
+
+            </div>
+            <div class="newDynamic" ng-controller="dynamic_ctrl">
+                <h1>最新动态</h1>
+                <section class="item-home" ng-repeat="dynamic in objList">
+                    <span class="d fl dynamic-personal">{{dynamic.username}}</span>
+                    <span class="d fl dynamic-title">{{dynamic.record}}</span>
+                    <span class="d fr dynamic-time">{{dynamic.time|time_format}}</span>
+                    <div class="c"></div>
+                </section>
+            </div>
+        </div>
+        <div class="mainBox-right fr">
+            <div class="toDoList" ng-controller="todo_ctrl">
+                <div class="titleMenu">
+                    <h1 class="fl">to do list</h1>
+						<span class="d fl">
+							<a href="javascript:void(0)" class="active-home">今日</a>
+                            <a href="javascript:void(0)">明日</a>
+							<a href="javascript:void(0)">本周</a>
+						</span>
+                </div>
+                <section class="item-home" ng-repeat="taskViewList in objList">
+                    <a href="#" class="d fl item-home-title">{{taskViewList.title}}</a>
+						<span class="d fr">
+							<a href="javascript:void(0)" class="btn-iterative">迭代</a>&nbsp;
+							<a href="javascript:void(0)" class="btn-undo">撤消</a>&nbsp;
+							<a href="javascript:void(0)" class="btn-complete">完成</a>&nbsp;
+						</span>
+                    <a href="" class="d fl item-home-sub item-home-title">所属目标：{{taskViewList.fid}}</a>
+                    <span class="d fr item-home-sub">创建人：{{taskViewList.creator}}&nbsp;截止日期：{{taskViewList.deadline}}</span>
+                    <div class="c"></div>
+                </section>
+            </div>
+            <div class="waitFor">
+                <h1>我分派的</h1>
+                <section class="item-home">
+                    <a href="#" class="d fl">目标管理平台文档系统功能实现目标管理平台文档系统功能实现</a>
+                    <span class="d fr pr">责任人：张三 &nbsp;已接收</span>
+                    <a href="" class="d fl item-home-sub">所属目标：目标管理平台文档系统功能实现目标管理平台文档系统功能实现</a>
+                    <span class="d fr item-home-sub">截止日期：2015-10-2</span>
+                    <div class="c"></div>
+                </section>
+                <section class="item-home">
+                    <a href="#" class="d fl">目标管理平台文档系统功能实现目标管理平台文档系统功能实现</a>
+                    <span class="d fr pr">责任人：张三 &nbsp;已接收</span>
+                    <a href="" class="d fl item-home-sub">所属目标：目标管理平台文档系统功能实现目标管理平台文档系统功能实现</a>
+                    <span class="d fr item-home-sub">截止日期：2015-10-2</span>
+                    <div class="c"></div>
+                </section>
+                <section class="item-home">
+                    <a href="#" class="d fl">目标管理平台文档系统功能实现目标管理平台文档系统功能实现</a>
+                    <span class="d fr pr">责任人：张三 &nbsp;已接收</span>
+                    <a href="" class="d fl item-home-sub">所属目标：目标管理平台文档系统功能实现目标管理平台文档系统功能实现</a>
+                    <span class="d fr item-home-sub">截止日期：2015-10-2</span>
+                    <div class="c"></div>
+                </section>
+                <section class="item-home">
+                    <a href="#" class="d fl">目标管理平台文档系统功能实现目标管理平台文档系统功能实现</a>
+                    <span class="d fr pr">责任人：张三 &nbsp;已接收</span>
+                    <a href="" class="d fl item-home-sub">所属目标：目标管理平台文档系统功能实现目标管理平台文档系统功能实现</a>
+                    <span class="d fr item-home-sub">截止日期：2015-10-2</span>
+                    <div class="c"></div>
+                </section>
+            </div>
+        </div>
+        <div class="c"></div>
+    </div>
+</block>

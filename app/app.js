@@ -1,0 +1,1 @@
+var api_Path="http://"+location.hostname+"/game/api/game/";

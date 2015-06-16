@@ -1,0 +1,52 @@
+
+<section class="item-home pr" ng-show="showSubObj.isShow" ng-repeat="showSubObj in showSubObj._child" style="margin-left:20px !important;">
+    <p>
+        <span ng-if="showSubObj._child.length"><i class="fl dropNodeY" ng-click="switchTree(showSubObj.id)">&nbsp;</i><i class="d subTitle fl {{showSubObj.myClass}}" ng-click="enterObj(showSubObj.id)">{{showSubObj.title}}</i></span>
+        <span ng-if="showSubObj._child.length==undefined"><i class="fl dropNodeN">&nbsp;</i><i class="d subTitle fl {{showSubObj.myClass}}" ng-click="enterObj(showSubObj.id)">{{showSubObj.title}}</i></span>
+        <i class="d fr item-home-sub">
+            {{showSubObj.deadline | between_time:2}}截止
+            <a class="item-home-sub" href="javascript:void(0)" ng-click="dropEditObj(showSubObj.id)">Edit</a>&nbsp;&nbsp;
+            <a class="item-home-sub" href="javascript:void(0)" ng-click="delete(0,showSubObj.id)">撤消</a>&nbsp;&nbsp;
+        </i>
+    </p>
+    <div class="c"></div>
+    <span class="d item-home-sub pa obj-edit-layer obj-edit-layer-sub" ng-show="showSubObj.editShow">
+        <div class="item-editBox">标题：<input class="obj-newFname item-editBox-title" type="text" ng-model="nObj.title" value="{{nObj.title}}"  placeholder="点击此处输入任务标题"/></div>
+        <div class="item-editBox">描述：<textarea placeholder="任务描述" class="item-description" ng-model="nObj.description"></textarea></div>
+
+        <div class="item-editBox">
+            <section class="pr fr">
+                负责人：<input class="obj-newFname" ng-click="openSelectR(1)"  type="text" ng-model="nObj.responsibleName" placeholder="点击此处选择"/>
+                <div class="pa selectBox" ng-show="isOpenResponsible">
+                    <ul >
+                        <li ng-repeat="mList in members" ng-click="selectResponsible(mList.uid,mList.nickname)">{{mList.nickname}}</li>
+                    </ul>
+                    <a class="pa btnCloseSelect" ng-click="openSelectR(0)">关闭</a>
+                </div>
+            </section>
+            <div class="c"></div>
+        </div>
+        <div class="item-editBox pr">
+            <i class="fl">参与人：<a href="javascript:void(0)" class="btnOpenJoin" ng-click="openSelectJ(1)">+</a></i>
+            <p class="listJoins fl"></p>
+            <div class="c"></div>
+            <input type="hidden" id="tbJoin" ng-model="nObj.join" value="{{nObj.join}}"/>
+            <div class="pa selectBox" ng-show="isOpenJoin">
+                <ul>
+                    <li ng-repeat="mList in members" ng-click="selectJoin(mList.uid,mList.nickname)">{{mList.nickname}}</li>
+                </ul>
+                <a class="pa btnCloseSelect" ng-click="openSelectJ(0)">关闭</a>
+            </div>
+        </div>
+        <div class="item-editBox">
+            <section class="fl">级别：<input type="radio" class="obj_radio" name="obj-radio{{showSubObj.id}}" ng-model="nObj.important"  value="0" />普通&nbsp;&nbsp;<input type="radio" name="obj-radio{{showSubObj.id}}" value="2" ng-model="nObj.important"  class="obj_radio"  >重要&nbsp;&nbsp;<input type="radio" name="obj-radio{{showSubObj.id}}" value="5" ng-model="nObj.important"  class="obj_radio"/>非常重要</section>
+            <section class="fr">截止日期：<input class="obj-newFname" ng-model="nObj.deadline"  type="text" placeholder="点击输入日期"/></section>
+            <div class="c"></div>
+        </div>
+        <div class="item-editBox"><a href="javascript:void(0)" class="item-editBox-btn" ng-click="saveObj()">保存</a></div>
+    </span>
+    <div ng-if="showSubObj._child.length">
+        <div ng-include="'template/tree.html'"></div>
+    </div>
+</section>
+

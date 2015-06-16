@@ -1,0 +1,49 @@
+<div class="objTree pa" ng-show="isTree" childUrl="{{url_getChildNode}}">
+    <a class="treeClose" href="javascript:void(0)" ng-click="openTree(0)">关闭</a>
+</div>
+<!--目标层-->
+<div class="obj-attrBox box-shadow-left" ng-show="isNew" style="top:50px;">
+    <section>标题：<input class="obj-newFname" type="text" ng-model="nObj.title"  value="{{nObj.title}}"  placeholder="点击此处输入目标标题"/></section>
+    <section><textarea ng-model="nObj.description" ng-blur="saveObj(1)" placeholder="点击此处输入目标描述">{{nObj.description}}</textarea></section>
+    <section class="pr">
+        负责人：<input class="obj-newFname" ng-click="openSelectR(1)"  type="text" ng-model="nObj.responsibleName" placeholder="点击此处选择"/>
+        <div class="pa selectBox" ng-show="isOpenResponsible">
+            <ul >
+                <li ng-repeat="mList in members" ng-click="selectResponsible(mList.uid,mList.nickname)">{{mList.nickname}}</li>
+            </ul>
+            <a class="pa btnCloseSelect" ng-click="openSelectR(0)">关闭</a>
+        </div>
+    </section>
+    <section class="pr">
+        参与人：<a href="javascript:void(0)" class="btnOpenJoin" ng-click="openSelectJ(1)">+</a>
+        <p class="listJoins"></p>
+        <input type="hidden" id="tbJoin" ng-model="nObj.join" value="{{nObj.join}}"/>
+        <div class="pa selectBox" ng-show="isOpenJoin">
+            <ul>
+                <li ng-repeat="mList in members" ng-click="selectJoin(mList.uid,mList.nickname)">{{mList.nickname}}</li>
+            </ul>
+            <a class="pa btnCloseSelect" ng-click="openSelectJ(0)">关闭</a>
+        </div>
+    </section>
+    <section>级别：<input type="radio" class="obj_radio" name="obj-radio" ng-model="nObj.important"  value="0" />普通&nbsp;&nbsp;<input type="radio" name="obj-radio" value="2" ng-model="nObj.important"  class="obj_radio"  >重要&nbsp;&nbsp;<input type="radio" name="obj-radio" value="5" ng-model="nObj.important"  class="obj_radio"/>非常重要</section>
+    <section>截止日期：<input class="obj-newFname" ng-model="nObj.deadline"  type="text" placeholder="点击选择所属目标"/></section>
+    <section><input class="obj-fotmBtn" type="submit" ng-click="saveObj()" value="保存"/><input class="obj-fotmBtn" type="submit" ng-click="cancelNew()" value="关闭"/></section>
+</div>
+<!--任务层-->
+<div class="obj-attrBox box-shadow-left" ng-show="isTNew" style="top:50px;">
+    <section>标题：<input class="obj-newFname" type="text" ng-model="nTask.title" value="{{nTask.title}}"  placeholder="点击此处输入任务标题"/></section>
+    <section><textarea ng-model="nTask.description" placeholder="点击此处输入任务描述">{{nTask.description}}</textarea></section>
+    <section class="pr">
+        负责人：<input class="obj-newFname" ng-click="openSelectR(1)" type="text" ng-model="nTask.responsibleName" placeholder="点击此处选择"/>
+        <div class="pa selectBox" ng-show="isOpenResponsible">
+            <ul >
+                <li ng-repeat="mList in members" ng-click="selectResponsible(mList.uid,mList.nickname)">{{mList.nickname}}</li>
+            </ul>
+            <a class="pa btnCloseSelect" ng-click="openSelectR(0)">关闭</a>
+        </div>
+    </section>
+    <section>级别：<input type="radio" class="obj_radio" name="nTask-radio" ng-model="nTask.important" value="0" />普通&nbsp;&nbsp;<input type="radio" name="nTask-radio" value="2" ng-model="nTask.important"  class="obj_radio"  >重要&nbsp;&nbsp;<input type="radio" name="nTask-radio" value="5" ng-model="nTask.important"  class="obj_radio"/>非常重要</section>
+    <section>开始日期：<input class="obj-newFname" ng-model="nTask.start_time"  type="text" placeholder="点击输入日期"/></section>
+    <section>截止日期：<input class="obj-newFname" ng-model="nTask.deadline"  type="text" placeholder="点击输入日期"/></section>
+    <section><input class="obj-fotmBtn" type="submit" ng-click="saveTask()" value="保存"/><input class="obj-fotmBtn" type="submit" ng-click="openEditTask(-1)" value="关闭"/></section>
+</div>
